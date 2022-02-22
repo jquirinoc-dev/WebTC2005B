@@ -6,32 +6,36 @@
 <html>
     <head>
         <title>AMONGUS HTML PRACTICE</title>
-        <script>
-            //aqui adentro va javascript
+        <script src="script.js"></script>
 
-            //declarar variables
-            x = 5;
-            x = "I hate u";
-
-            console.log("HOLA DESDE AFUERA DE LA FUNCTION");
-
-            function example(){
-                
-                console.log("Hola a todos jiji");
-                alert("Hola a todos jiji");
+        <!--estilo-->
+        <!--CSS-->
+        <!--Cascading style sheets-->
+        <!--Ademas de embeber, se pueden definir clases o estilo por id en otra region-->
+        <!--CLASE: se puede definir un tipo de estilo reutilizable-->
+        <style>
+            p {
+                background-color: pink;
             }
 
-            function boton2(){
-                alert("BOTON 2");
+            .estilote {
+                color: red;
+            }
+            
+            .estilito {
+                font-family:'Courier New', Courier, monospace;
+                color:brown;
+                background-color: blueviolet;
+                font-weight: bold;
             }
 
-            function boton3(){
-                alert("BOTON 3");
-                
-                document.getElementById("parrafitobonito").innerHTML = "<h1>CAMBIE PARA SIEMPRE.</h1>";
+            #parrafitobonito {
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                color: white;
+                background-color: black;
             }
-
-        </script>
+        </style>
 
 
     </head>
@@ -50,7 +54,7 @@
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed luctus quam. Etiam in nibh sodales, tincidunt orci non, iaculis risus.
         </p>
-        <p>
+        <p class="estilote">
             Aliquam dui ante, ullamcorper congue augue non, fringilla pulvinar lorem. Nulla eget ultricies eros. Quisque sit amet consectetur massa, vitae dignissim sapien. Curabitur interdum viverra lorem, et sagittis felis sodales et.
         </p>
 
@@ -72,7 +76,7 @@
         <br />
         <br />
 
-        <div>
+        <div class="estilito">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed luctus quam. Etiam in nibh sodales, tincidunt orci non, iaculis risus. 
             
             Aliquam dui ante, ullamcorper congue augue non, fringilla pulvinar lorem. Nulla eget ultricies eros. Quisque sit amet consectetur massa, vitae dignissim sapien. Curabitur interdum viverra lorem, et sagittis felis sodales et. Morbi lectus velit, vulputate non commodo et, mattis at augue. Sed malesuada vestibulum venenatis. Donec ultrices nibh sed congue posuere. Vivamus scelerisque viverra risus sed tempus. Mauris sit amet dolor at justo aliquet aliquam. Donec dapibus elit et justo feugiat, eget venenatis justo consequat. Mauris tempor ante ac risus gravida, nec volutpat leo vehicula. Ut posuere aliquam bibendum.
@@ -110,7 +114,7 @@
         <br />
         <br />
 
-        <img src="niggas.jpg" />
+        <img src="4_Purple_Pink_and_Orange_Clouds.png" width="40%"/>
 
         <br />
         <br />
@@ -131,12 +135,15 @@
 
         <!--embeber estilo-->
 
-        <div style="font-size: 100pt; color: #ff7e0d;">
+        <div style="font-size: 100pt; color: #ff7e0d; background-color: gray;">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed luctus quam. Etiam in nibh sodales, tincidunt orci non, iaculis risus. 
             
             Aliquam dui ante, ullamcorper congue augue non, fringilla pulvinar lorem. Nulla eget ultricies eros. Quisque sit amet consectetur massa, vitae dignissim sapien. Curabitur interdum viverra lorem, et sagittis felis sodales et. Morbi lectus velit, vulputate non commodo et, mattis at augue. Sed malesuada vestibulum venenatis. Donec ultrices nibh sed congue posuere. Vivamus scelerisque viverra risus sed tempus. Mauris sit amet dolor at justo aliquet aliquam. Donec dapibus elit et justo feugiat, eget venenatis justo consequat. Mauris tempor ante ac risus gravida, nec volutpat leo vehicula. Ut posuere aliquam bibendum.
         </div>
-    
+
+        <div style="opacity: 0.7; position: absolute; left:100px; top:100px; width: 500px; height: 500px; background-color: red">
+            TEXTO CHIDO.
+        </div>
     </body>
 
 </html>
