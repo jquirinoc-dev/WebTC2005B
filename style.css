@@ -1,0 +1,21 @@
+p {
+    background-color: pink;
+}
+
+.estilote {
+    color: red;
+}
+
+.estilito {
+    font-family:'Courier New', Courier, monospace;
+    color:brown;
+    background-color: blueviolet;
+    font-weight: bold;
+}
+
+#parrafitobonito {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
