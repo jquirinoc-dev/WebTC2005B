@@ -21,3 +21,11 @@ function boton3(){
     
     document.getElementById("parrafitobonito").innerHTML = "<h1>CAMBIE PARA SIEMPRE.</h1>";
 }
+
+function cambiarDatoDeInput(){
+    document.getElementById("textito").value = "HOLA DESDE JAVASCRIPT";
+}
+
+function alertarConDatos(){
+    alert(document.getElementById("textito").value);
+}
