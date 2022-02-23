@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  background-color:black;
+  color:white;
+}
+
+table a img{
+  width: 70px;
+}
+
+td {
+  border: 1px solid black;
+  width: 150px;
+  overflow: hidden;
+}
+
+nav a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	text-transform: uppercase;
+	padding: 4px;
+	font-weight: bold;
+	width: 120px;
+}
+
+nav a:hover, a:active{
+	color: darkorange;
+}

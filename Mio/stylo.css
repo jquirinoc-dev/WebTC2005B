@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+#mymargin {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    background: aquamarine;
+    margin: 20px;
+    border:gold solid 10px;
+    padding: 5px;
+}
+
+
+div{
+    width: 100%;
+    background: black url(AmorMio.jpeg);
+    font-size: 200;
+    font-weight: bold;
+    text-align: right;
+
+}
