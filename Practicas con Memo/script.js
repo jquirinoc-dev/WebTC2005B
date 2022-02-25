@@ -1,15 +1,13 @@
 //aqui adentro va javascript
 
 //declarar variables
+
 x = 5;
-x = "I hate u";
 
 console.log("HOLA DESDE AFUERA DE LA FUNCTION");
 
 function example(){
-    
-    console.log("Hola a todos jiji");
-    alert("Hola a todos jiji");
+    alert("Hola a todos");
 }
 
 function boton2(){
