@@ -1,0 +1,107 @@
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+
+    font-size: 10px;
+
+}
+
+body {
+
+    background-image: url(bg-image-mrrobot.jpg);
+    background-color: #24A19C;
+
+}
+
+
+.Titulo {
+
+    color: white;
+    margin-top: 3rem;
+    text-align: center;
+    font-family: "8-bit Arcade In";
+    font-size: 10rem;
+
+}
+
+#divBonito {
+
+    /* margin-top: 15%;
+    margin-left: 35%; */
+    margin: auto;
+    margin-top: 10%;
+    padding: 1rem;
+    height: 300px;
+    width: 600px;
+    background-color: rgb(165, 42, 42, 0.5);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#parrafitoBonito {
+
+    color: yellow;
+    position: absolute;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Dogica";
+    
+    /* margin-top: 2.5%;
+    margin-left: 40%;
+    margin-right: 40%;
+    justify-content: center;
+    display: block; */
+    /* opacity: 100%; */
+    
+    justify-content: center;
+    display: block;
+    padding-left: 50%;
+    padding-right: 50%;
+    padding-top: 2%;
+}
+
+#gifcentrado {
+    
+    /* top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    justify-content: center;
+    display: block;
+    opacity: 70%;
+    /* margin: auto; */
+    /* width: 50%; */
+}
+
+#names {
+    margin-top: 5%;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    background-color: red;
+}
+
+#butonDiv {
+
+    text-align: center;
+
+}
+
+#botonForm {
+
+    font-size: 3rem;
+    text-align: center;
+    /* justify-content: center; */
+    color: black;
+    background-color: yellow;
+
+}
