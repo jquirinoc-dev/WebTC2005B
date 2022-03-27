@@ -24,8 +24,20 @@ app.post("/addPet", (req, res) => {
         data["pet4"] = newPet["pet4"];
         console.log(data);
         res.end(JSON.stringify(data));
+        fs.writeFile(__dirname + "/" + "pets.json", JSON.stringify(data), 'utf8', err =>{;
+            if (err) throw err;
+        });
     });
 });
+
+app.delete("/deletePet", (req, res) => {
+    fs.readFile(__dirname + "/" + "pets.json", 'utf8', (err, data) => {
+        data = JSON.parse(data);
+        delete data["pet4"];
+        console.log(data);
+        res.end(JSON.stringify(data));
+    });
+})
 
 
 app.get("/api", (req, res) => {

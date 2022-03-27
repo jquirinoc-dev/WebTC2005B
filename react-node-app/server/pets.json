@@ -1,16 +1,1 @@
-{
-    "pet1" : {
-       "name" : "rocky",
-       "type" : "dog",
-       "owner" : "jonathan",
-       "color" : "white with black and brown",
-       "id": 1
-    },
-     "pet2" : {
-        "name" : "mejillitas",
-        "type" : "cat",
-        "owner" : "kyc",
-        "color" : "orange",
-        "id": 2
-    }
-}
+{"pet1":{"name":"rocky","type":"dog","owner":"jonathan","color":"white with black and brown","id":1},"pet2":{"name":"mejillitas","type":"cat","owner":"kyc","color":"orange","id":2},"pet4":{"name":"nala","type":"dog","owner":"jonathan","color":"salt and pepper","id":4}}
