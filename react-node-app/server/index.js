@@ -39,6 +39,12 @@ app.delete("/deletePet", (req, res) => {
     });
 })
 
+app.put("/updatePet", (req, res) => {
+    fs.readFile(__dirname + "/" + "pets.json", "utf8", (err, data) => {
+        data = JSON.parse(data);
+    });
+})
+
 
 app.get("/api", (req, res) => {
     res.json({message: "Hello from server side!" });
