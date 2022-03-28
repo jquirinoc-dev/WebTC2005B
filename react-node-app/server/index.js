@@ -40,7 +40,7 @@ app.delete("/deletePet", (req, res) => {
 })
 
 app.put("/updatePet", (req, res) => {
-    fs.readFile(__dirname + "/" + "pets.json", "utf8", (err, data) => {
+    fs.readFile(__dirname    + "/" + "pets.json", "utf8", (err, data) => {
         data = JSON.parse(data);
     });
 })
