@@ -36,6 +36,9 @@ app.delete("/deletePet", (req, res) => {
         delete data["pet4"];
         console.log(data);
         res.end(JSON.stringify(data));
+        fs.writeFile(__dirname + "/" + "pets.json", JSON.stringify(data), 'utf8', err =>{;
+            if (err) throw err;
+        });
     });
 })
 
