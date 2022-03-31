@@ -23,7 +23,7 @@ app.post("/addPet", (req, res) => {
         data = JSON.parse(data);
         data["pet4"] = newPet["pet4"];
         console.log(data);
-        res.end(JSON.stringify(data));
+        Sres.end(JSON.stringify(data));S
         fs.writeFile(__dirname + "/" + "pets.json", JSON.stringify(data), 'utf8', err =>{;
             if (err) throw err;
         });
