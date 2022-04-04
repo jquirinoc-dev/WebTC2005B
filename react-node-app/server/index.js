@@ -2,11 +2,14 @@
 
 const express = require("express");
 
+const res = require("express/lib/response");
+const fs = require("fs");
+
 const PORT = process.env.PORT || 3001;
 
 const app = express();
 
-const fs = require("fs");
+app.use(express.json());
 
 const newPet = {
     "pet4" : {
@@ -42,9 +45,33 @@ app.delete("/deletePet", (req, res) => {
     });
 })
 
-app.put("/updatePet", (req, res) => {
+app.put("/updatePet/:pet", (req, res) => {
     fs.readFile(__dirname    + "/" + "pets.json", "utf8", (err, data) => {
         data = JSON.parse(data);
+        if (data[req.params.pet]){
+            const npet ={
+                name: req.body.name,
+                type: req.body.type,
+                owner: req.body.owner,
+                color: req.body.color,
+                id: data[req.params.pet]["id"]
+            };
+
+            data[req.params.pet] = npet
+            fs.writeFile(__dirname + "/" + "pets.json", JSON.stringify(data, null, '\t'), 'utf8', (err, data) => {
+                if (err) {
+                    console.log(err)
+                    return
+                }
+            })
+
+            console.log(data);
+            res.end(JSON.stringify(data));
+
+        }
+        else {
+            res.status(404).json({msg: "Pet not found"});
+        }
     });
 })
 
