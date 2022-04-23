@@ -1,9 +1,9 @@
 // server/index.js
 
 const express = require("express");
-
 const res = require("express/lib/response");
 const fs = require("fs");
+const { errorMonitor } = require("events");
 
 const PORT = process.env.PORT || 3001;
 
@@ -20,6 +20,8 @@ const newPet = {
         "id" : 4
     }
 }
+
+
 
 app.post("/addPet", (req, res) => {
     fs.readFile(__dirname + "/" + "pets.json", "utf8", (err, data) => {
